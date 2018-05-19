@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="es-CO">
+ <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Rock+Salt" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+  <title>Blog de Música de Soda Stereo</title>
+  <style type="text/css">
+  
+  
+  /* Fondo de Pagina */
+  body {
+  background-color:#FCF586;
+  }
+  #fondo {
+  background-color:white;
+  }
+  #ContenedorPadre {
+  margin:1% auto;
+  border-top:1px #545121 solid;
+  border-bottom:1px #545121 solid;
+  }
+
+
+  /* Fondo Cabecera */
+  #FondoCabecera {
+  background-color:#010101;
+  }
+
+
+  /* Logo */
+  #LogoCabecera {
+  width:30%;
+  }
+
+
+   /* Redes Sociales */
+  #IconosRedesSociales {
+  display:flex;	
+  align-items:flex-end;
+  }
+  #IconosRedesSociales img {
+  width:100%;
+  }
+  #IconosRedesSociales div {
+  margin:0 1%;
+  }
+  #IconosRedesSociales img:hover {
+  transform:scale(.95, .95);
+  }
+  
+
+
+  /* Navegación */
+  #navegacion {
+  background-color:#FCF03A;
+  }
+  #navegacion ul {
+  display:flex;
+  list-style-type:none;
+  padding:0;
+  width:100%;
+  margin:1% auto;
+  }
+  #navegacion li {
+  margin:auto;
+  }
+  
+
+  /* Contenido */
+  #ImagenContenido {
+  width:40%;
+  }
+  h1 {
+  font-family:'Rock Salt';
+  margin-top:1%; 
+  }
+  p {
+  font-family:'Roboto';
+  }
+  .BordeIzquierdo {
+  border-left:1px #545121 solid; 
+  }
+  .BordeDerecho {
+  border-right:1px #545121 solid;
+  }
+  #Soloflex {
+  display:flex;
+  border:1px gray solid;
+  margin-bottom:1%;
+  border-radius:4px 4px 4px 4px;
+  }
+  #Soloflex img {
+  width:100px;
+  height:100px;
+  border-radius:4px 4px 4px 4px;
+  margin:24px;
+  }
+  form {
+  margin-right:1%;
+  margin-left:1%;
+  }
+  .ReducirImagen {
+  width:40%;
+  margin-right:1%;
+  }
+  .separacion hr {
+  border:2px gray solid;
+  }
+
+
+  /* Opciones de búsqueda */
+  .fondolistabusqueda a:hover {
+  background-color:#FCF03A;
+  }
+
+  /* Media Queries */
+  @media(max-width:575px) {
+  #IconosRedesSociales img {
+  width:100%;
+  }
+  #IconosRedesSociales div {
+  width:10%;
+  margin:auto;
+  }
+  #IconosRedesSociales img:hover {
+  transform:none;
+  }
+  .LogoMovil {
+  content:url("Imagenes/logo2.png");
+  margin:auto;
+  }
+  #LogoCabecera {
+  width:100%;
+  }
+  #FondoMovil1, #navegacion {
+  background-color:#D4C514;	
+  }
+  #navegacion ul {
+  flex-direction:column;
+  }
+  .FondoMovil2 {
+  background-color:#A1960F;
+  }
+  .quitar {
+  display:none;
+  }
+  .poner {
+  content:url("Imagenes/soda.gif");
+  max-width:100%;
+  margin:auto;
+  }
+  .centrar {
+  text-align:center;
+  }
+  .QuitarBordeDerecho {
+  border-right:0;
+  }
+  .QuitarBordeIzquierdo {
+  border-left:0;
+  }
+  #ContenedorPadre {
+  margin:auto;
+  }
+  .SinDisplay {
+  display:none;
+  }
+  .ReducirImagen {
+  display:none;
+  }
+  .ColocarImg {
+  content:url("Imagenes/estilo-musical.jpg");
+  width:50%;
+  margin:auto;
+  }
+  }
+  </style>
+ </head>
+ <body>
+
+
+ 	<!-- Contenedor Principal -->
+ 	<section id="ContenedorPadre" class="container BordeIzquierdo BordeDerecho">
+ 	
+
+ 		<!-- Contenedor Cabecera -->
+ 		<section id="FondoCabecera" class="row">
+ 			<section id="FondoMovil1" class="col-sm-8">
+ 				<img id="LogoCabecera" class="LogoMovil" src="Imagenes/logo_soda_stereo.jpg">
+ 			</section>
+ 			<section id="IconosRedesSociales" class="col-sm-4 FondoMovil2">
+ 				<div><a href="https://www.youtube.com/channel/UCfA6kwpdkQenkHnLcgmzz-A" target="_blank"><img src="Imagenes/youtube.svg"></a></div>
+ 				<div><a href="https://es-la.facebook.com/sodastereo/" target="_blank"><img src="Imagenes/facebook.svg"></a></div>
+ 				<div><a href="https://www.instagram.com/soda_stereo_total/?hl=es-la" target="_blank"><img src="Imagenes/instagram.svg"></a></div>
+ 				<div><a href="https://co.pinterest.com/silcuper/gustavo-cerati/" target="_blank"><img src="Imagenes/pinterest.svg"></a></div>
+ 				<div><a href="https://twitter.com/sodastereo?lang=es" target="_blank"><img src="Imagenes/twitter.svg"></a></div>
+ 			</section>
+ 		</section>
+
+
+ 		<!-- Navegación -->
+ 		<section id="navegacion" class="row">
+ 			<ul>
+ 				<li>
+ 					<a href="#" class="badge badge-light">Inicio</a>
+ 				</li>
+ 				<li>
+ 					<a href="#" class="badge badge-light">Artistas</a>
+ 				</li>
+ 				<li>
+ 					<a href="#" class="badge badge-light">Grupos</a>
+ 				</li>
+ 				<li>
+ 					<a href="#" class="badge badge-light">Top 10</a>
+ 				</li>
+ 				<li>
+ 					<a href="#" class="badge badge-light">Letras</a>
+ 				</li>
+ 				<li>
+ 					<a href="#" class="badge badge-light">Acorde</a>
+ 				</li>
+ 			</ul>
+ 		</section>
+
+
+ 			<!-- Contenido -->
+ 				<section class="row" id="fondo">
+ 					<section class="col-sm-8 BordeDerecho QuitarBordeDerecho separacion">
+ 				<h1 class="centrar">Soda Stereo</h1>
+ 				<div class="poner"></div>
+ 				<p><img id="ImagenContenido" class="float-right quitar" src="Imagenes/soda.gif"><b>Soda Stereo</b> fue una banda de rock argentina, formada en Buenos Aires en el año 1982 por Gustavo Cerati (voz, guitarra), Héctor «Zeta» Bosio (bajo) y Carlos Alberto Ficicchia «Charly Alberti» (batería), considerada una de las más influyentes e importantes bandas iberoamericanas de todos los tiempos y una leyenda de la música latina. La banda tuvo un papel muy importante en el desarrollo y la difusión del rock iberoamericano durante las décadas de 1980 y 1990. Fueron el primer grupo de habla hispana en conseguir un éxito masivo en Latinoamérica. Soda Stereo ha encabezado las listas de todos los tiempos en su nativa Argentina, donde se establecieron varios récords de ventas de discos y asistencias a conciertos.</p>
+ 				<p>Cuatro de sus álbumes han sido incluidos en la lista de los 250 mejores discos de todos los tiempos del rock iberoamericano según la revista <i>Al borde</i>: <em>Canción animal</em> (n.º 2), <i>Comfort y música para volar</i> (n.º 15), <em>Signos</em> (n.º 40) y <i>Sueño Stereo</i> (n.º 41). Además, la edición en inglés de Rolling Stone consideró a <em>Sueño Stereo</em> como el cuarto mejor álbum de la historia del rock latino. Su canción «De música ligera» ha sido considerada la segunda mejor del rock hispanoamericano y la cuarta de todos los tiempos, tanto del rock latinoamericano, como del rock argentino en particular. Las canciones «Te hacen falta vitaminas» y «Nada personal» han sido consideradas la n.º 73 y n.º 74 respectivamente entre los mejores temas del rock argentino. Los videos de «En la ciudad de la furia» y «Ella usó mi cabeza como un revólver» fueron finalistas y ganadores respectivamente del entonces único premio MTV a la música latina. El video «Cuando pase el temblor» fue nominado finalista del 12.° World Festival of Video and TV en Acapulco. En 2002 recibieron el <i>Premio Leyenda</i> de MTV Latinoamérica por su trayectoria musical, el primero que entregó la entidad. En sus catorce años de existencia continuada realizaron 1488 recitales en 97 ciudades de países de América y Europa. La banda vendió aproximadamente 20 millones de copias en todo el mundo.</p>
+ 				<p>En 1997 se disolvió por problemas personales y por diferencias de criterios artísticos entre sus integrantes, realizando una corta y emotiva gira de despedida terminada el 20 de septiembre de 1997 en el estadio de River Plate, conocido como <em>El último concierto</em>. A mediados de 2007 la banda anunció su regreso para realizar una única gira continental llamada <i>Me Verás Volver</i> en la que reunió a más de un millón de seguidores, rompiendo varios récords de asistencia y número de conciertos.</p>
+ 				<div>
+ 				<h5>Comentarios:</h5>
+ 				<div id="Soloflex">
+ 				<img class="SinDisplay" src="Imagenes/perfil.jpg">
+ 				<form>
+                 <div class="form-group">
+                  <label for="comment"></label>
+                  <textarea rows="6" cols="100%" class="form-control"  id="comment"></textarea>
+                  </div>
+                 </form>
+                 </div>
+                </div>
+                <hr>
+                <h1>Estilo musical</h1>
+                <h2>Influencias</h2>
+                <div class="ColocarImg"></div>
+                <p><img class="ReducirImagen float-left" src="Imagenes/estilo-musical.jpg">Soda Stereo fue una banda particularmente exploradora de nuevos sonidos, especialmente inspirados en el afán creativo de Gustavo Cerati; y siempre buscaron que ninguno de sus discos sonara igual al anterior. Una de sus principales y más claras influencias durante toda la carrera musical del grupo, fue la que recibía permanentemente del new wave. Entre los artistas que influenciaron a Soda durante su carrera se encuentran The Smiths, Fine Young Cannibals y los trabajos en solitario de George Harrison, Paul McCartney y John Lennon; The Police, New Order, The Cure, Depeche Mode, Television, Echo & The Bunnymen, Talking Heads, Elvis Costello, David Bowie, Deep Purple, Virus, XTC, The Specials, Squeeze, Pink Floyd, Queen (como se ve en la canción tributo «Algún Día»), My Bloody Valentine y Cocteau Twins.68​69​ En lo que respecta a cada uno por separado, algunos de los más grandes ídolos de Cerati eran Sting (vocalista de The Police) y Luis Alberto Spinetta. Así mismo, la canción Purple Haze de Jimi Hendrix y el virtuosismo de Ritchie Blackmore fueron su motivación para dar sus primeros pasos con la guitarra eléctrica; Zeta aprendió a tocar el bajo viendo a su ídolo Paul McCartney; y Charly aprendió mucho de su padre Tito Alberti y además admiraba a Stewart Copeland, baterísta de The Police.</p>
+                <h2>Años 80</h2>
+                <p>En su comienzo, tenían un sonido New Wave bastante pop y fiestero, lo que se oye en su primer trabajo homónimo <em>Soda Stereo</em>, tributario de bandas como The Police y The Specials. Con el pasar del tiempo, el sonido new wave fue madurando y ya no era tan fiestero; además, influidos por agrupaciones como The Cure y Television, añadieron el crudo sonido post-punk. Fue así como en los discos <i>Nada Personal</i> y <em>Signos</em> convivían éxitos pop («Juego de seducción», «Persiana americana», «El rito») con canciones más oscuras («No existes», «Ecos», «Final Caja Negra»).</p>
+                <p>Hacia fines de la década, el grupo decidió cambiar el rumbo. Para ello, Gustavo Cerati contrató al experimentado músico Carlos Alomar (entre otros, durante muchos años guitarrista de David Bowie) como productor musical y fueron a vivir a New York por más de un mes para trabajar en su cuarto disco <i>Doble</i> Vida. Gracias a esto, añadieron al sonido new wave, influencias de la música norteamericana, especialmente del funk y del soul, junto con un sonido más pop. Aunque había excepciones, como es el caso del sonido alternativo de «En la ciudad de la furia».</p>
+                <h2>Años 90</h2>
+                <p>El cambio de década, también marcó un antes y un después en el estilo musical de la banda. Dejaron atrás al sonido new wave y post-punk y adoptaron un estilo mucho más basado en el protagonismo de la guitarra. Fue así como en 1990 vio la luz <em>Canción</em> Animal, que se convertiría también en su disco más exitoso. Y para sorpresa de muchos, el cambio más radical estaba aún por venir.</p>
+                <p>En 1992 y luego de culminar la extensa y exitosa Gira Animal, volvieron al estudio de grabación. Influenciados por el naciente movimiento alternativo en Inglaterra, la banda decide olvidarse de la masividad, la radio y los sonidos pop para dar un giro completo a su música, lanzando ese mismo año <em>Dynamo</em>, con un potente y oscuro sonido de shoegazing y rock alternativo.70​ Además, incluyen algunas creaciones experimentales.</p>
+                <p>En 1995 y luego de casi separarse, deciden volver a sus orígenes con el que sería su último álbum de estudio, <em>Sueño Stereo</em>. Si bien mantenían un sonido alternativo predominante, lo hicieron más melódico y suavizado. Además, se apreciaba una notable influencia de la música electrónica. Esto se tradujo en un éxito rotundo del álbum, especialmente de hits como la alternativa «Ella usó mi cabeza como un revólver» y la alegre y pop «Zoom». También la banda se dio el tiempo de experimentar, especialmente con las últimas tres canciones del disco.</p>
+                <p>El camino que quería seguir la banda si hubiesen seguido juntos es un misterio, aunque parecía estar orientado a la música electrónica, como mostraría Gustavo Cerati en 1999 con su álbum <i>Bocanada</i>, el primero luego del quiebre del grupo.</p>
+                <div>
+ 				<h5>Comentarios:</h5>
+ 				<div id="Soloflex">
+ 				<img class="SinDisplay" src="Imagenes/perfil.jpg">
+ 				<form>
+                 <div class="form-group">
+                  <label for="comment"></label>
+                  <textarea rows="6" cols="100%" class="form-control"  id="comment"></textarea>
+                  </div>
+                 </form>
+                 </div>
+                </div>
+                <hr>
+ 				    </section>
+
+ 				    <!-- Buscador -->
+ 				    <section class="col-sm-4 BordeIzquierdo QuitarBordeIzquierdo ">
+ 				    	<div class="SinDisplay">
+                         <h5>Buscar</h5>
+                          <div class="row">
+                           <div class="col-12">
+                            <div class="input-group">
+                             <input class="form-control border-secondary py-2" type="search">
+                              <div class="input-group-append">
+                               <button class="btn btn-outline-secondary" type="button">
+                                <i class="fa fa-search"></i>
+                               </button>
+                              </div>
+                             </div>
+                            </div>
+                           </div>
+                          </div>
+                          <hr> 
+
+
+                          <!-- Opciones de búsqueda -->
+                          <h5>Top 10</h5>
+                          <div class="list-group SinDisplay fondolistabusqueda">
+  <a href="https://www.youtube.com/watch?v=OX-us7PEfkc" target="_blank" class="list-group-item list-group-item-action"><i class="fas fa-music"></i> De Música Ligera</a>
+  <a href="https://www.youtube.com/watch?v=VoGwvVoaoCw" target="_blank" class="list-group-item list-group-item-action"><i class="fas fa-music"></i> En La Ciudad De La Furia</a>
+  <a href="https://www.youtube.com/watch?v=iURexk-09uE" target="_blank" class="list-group-item list-group-item-action"><i class="fas fa-music"></i> Persiana Americana</a>
+  <a href="https://www.youtube.com/watch?v=eguctGjUNLI" target="_blank" class="list-group-item list-group-item-action"><i class="fas fa-music"></i> Prófugos</a>
+  <a href="https://www.youtube.com/watch?v=ZNzYr4U7Zs8" target="_blank" class="list-group-item list-group-item-action"><i class="fas fa-music"></i> Cuando Pase El Temblor</a>
+  <a href="https://www.youtube.com/watch?v=EfzORBnuUak" target="_blank" class="list-group-item list-group-item-action"><i class="fas fa-music"></i> Corazón Delator</a>
+  <a href="https://www.youtube.com/watch?v=1zzzby2tAQM" target="_blank" class="list-group-item list-group-item-action"><i class="fas fa-music"></i> Ella Uso Mi Cabeza Como Un Revolver</a>
+  <a href="https://www.youtube.com/watch?v=vNKUDiA2YQE" target="_blank" class="list-group-item list-group-item-action"><i class="fas fa-music"></i> Signos</a>
+  <a href="https://www.youtube.com/watch?v=xXD_IEcZbMI" target="_blank" class="list-group-item list-group-item-action"><i class="fas fa-music"></i> Trátame Suavemente</a>
+  <a href="https://www.youtube.com/watch?v=LB6_e2uA7rE" target="_blank" class="list-group-item list-group-item-action"><i class="fas fa-music"></i> Nada Personal</a>
+</div>
+ 				    </section>
+ 			    </section>
+ 		</section>
+ 	</section>
+ </body>
+</html>
